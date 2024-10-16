@@ -1,0 +1,175 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Patrick Hand', cursive; /* Handwriting font */
+    background-color: #fff; /* White background */
+    color: #333; /* Changed to a more readable grey */
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #7F00FF; /* Header color */
+    padding: 10px 20px;
+}
+
+.logo h1 {
+    font-size: 24px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    text-decoration: none;
+    transition: color 0.3s ease; /* Smooth transition on hover */
+}
+
+/* Hover effect for navigation links */
+nav ul li a:hover {
+    color: #ffcc00; /* Yellow on hover */
+}
+
+.hero-section {
+    height: 80vh; /* Balanced height for the hero section */
+    background-image: url('OmegaRoseGoldDhoopSticks50g.webp');
+    background-size: contain; /* Ensures the whole image fits within the section */
+    background-repeat: no-repeat; /* Prevents the image from repeating */
+    background-position: center top; /* Positions the image at the top center */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 20px; /* Padding for content spacing */
+}
+
+.products-section {
+    padding: 50px;
+    text-align: center;
+    background-color: #7F00FF; /* Section color */
+transition: background-color 0.3s ease;
+}
+/* Hover effect for products section */
+.products-section:hover {
+    background-color: #e6b800; /* Darker yellow on hover */
+}
+
+
+
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 20px;
+}
+
+/* Product item styling */
+.product-item {
+    background-color: #f9f9f9; /* Light background for products */
+    padding: 20px;
+    border-radius: 8px;
+    border: 2px solid #ffcc00; /* Yellow border for products */
+    transition: box-shadow 0.3s ease, transform 0.3s ease; /* Smooth transition */
+}
+
+/* Hover effect for product items */
+.product-item:hover {
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); /* Add shadow on hover */
+    transform: translateY(-5px); /* Slightly lift the product card */
+}
+
+.product-item img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.about-section {
+    padding: 50px;
+    background-color: #7F00FF; /* Yellow background for About section */
+    text-align: center;
+    transition: background-color 0.3s ease; /* Smooth transition */
+}
+
+/* Hover effect for About section */
+.about-section:hover {
+    background-color: #e6b800; /* Darker yellow on hover */
+}
+
+.contact-section {
+    padding: 50px;
+    background-color: #fff; /* White background for Contact section */
+    text-align: center;
+}
+
+.contact-section form {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.contact-section input, .contact-section textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ffcc00; /* Yellow border */
+    border-radius: 5px;
+    transition: border-color 0.3s ease; /* Smooth transition */
+}
+
+/* Hover effect for input fields */
+.contact-section input:hover, .contact-section textarea:hover {
+    border-color: #e6b800; /* Darker yellow border on hover */
+}
+
+/* Button hover effect in the contact section */
+.contact-section button {
+    background-color: #ffcc00; /* Yellow button */
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Smooth transition */
+}
+
+.contact-section button:hover {
+    background-color: #e6b800; /* Darker yellow on hover */
+    transform: scale(1.05); /* Slightly scale the button */
+}
+
+footer {
+    background-color: #7F00FF; /* Footer color */
+    padding: 20px;
+    text-align: center;
+    transition: background-color 0.3s ease; /* Smooth transition */
+}
+
+/* Hover effect for footer */
+footer:hover {
+    background-color: #e6b800; /* Darker yellow on hover */
+}
+
+/* Spacing between sections */
+section {
+    margin: 20px 0; /* Spacing between each section */
+}
+
+/* Additional styles for the About section heading */
+.about-section h2 {
+    margin-bottom: 20px; /* Space between heading and content */
+}
+
+/* Additional styles for the Products section heading */
+.products-section h2 {
+    margin-bottom: 20px; /* Space between heading and content */
+}
